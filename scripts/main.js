@@ -19,7 +19,7 @@ app.config(function($stateProvider, $urlRouterProvider,$locationProvider) {
             templateUrl: 'HTML/aadhar.html'       
         });
         $urlRouterProvider.otherwise('/home');
-$locationProvider.html5Mode(true);
+        // $locationProvider.html5Mode(true);
 
        
 });
