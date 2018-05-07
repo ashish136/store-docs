@@ -17,23 +17,13 @@ app.config(function($stateProvider, $urlRouterProvider,$locationProvider) {
         .state('welcomeUser.aadhar', {
             url: '/aadhar',
             templateUrl: 'HTML/aadhar.html'       
+        })
+        .state('welcomeUser.dl', {
+            url: '/dl',
+            templateUrl: 'HTML/dl.html'       
         });
         $urlRouterProvider.otherwise('/home');
         // $locationProvider.html5Mode(true);
 
        
 });
-// app.config(function($routeProvider) {
-//     $routeProvider
-//     .when("/", {
-//         templateUrl : "\\HTML\\home.html",
-//         controller : "homeCtrl"
-//     })
-//     .when("/welcomeUser", {
-//         templateUrl : "\\HTML\\welcomeUser.html"
-//     })
-//     .when("/aadhar",{
-//         templateUrl : "\\HTML\\aadhar.html",
-//         controller : "homeCtrl"
-//     })
-// });

@@ -108,4 +108,10 @@ margin-top: 45px;
     border-radius: 10px;
     padding: 50px;
 }
+form .sub-btn{
+    margin-top: 50px;
+    /* width:100px; */
+    background-color: #40458c;
+    color: #fff;
+}
 /*****document style ends********/
