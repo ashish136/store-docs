@@ -6,9 +6,11 @@
     <base href="/">
     <link href="CSS/stytle.css" rel="stylesheet">
     <title>Home</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
-    <script src="//unpkg.com/@uirouter/angularjs/release/angular-ui-router.min.js"></script>
-
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="//unpkg.com/@uirouter/angularjs/release/angular-ui-router.min.js"></script> -->
+   <script src="node_modules\angular\angular.min.js"></script>
+   <script src="node_modules\@uirouter\angularjs\release\angular-ui-router.min.js"></script>
 </head>
 <body ng-app="myApp">
   <ul id="my-nav">
@@ -21,6 +23,9 @@
         <div class="ui-view"></div>
         
     <!-- linking scripts-->
+    <script src="jquery.min.js"></script>
+    <script src="popper.min.js"></script>
+    <script src="bootstrap.min.js"></script>
     <script src="Scripts\main.js"></script>
     <script src="Scripts\Controllers\homeCtrl.js"></script>
     
