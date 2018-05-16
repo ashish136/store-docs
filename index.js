@@ -7,6 +7,8 @@ const app = express();
 
 mongoose.connect("mongodb://localhost/StoreDoc");
 mongoose.Promise = global.Promise;
+
+app.use(express.static(__dirname));
 app.use(bodyParser.json());
 
 app.use("/api", routes);
