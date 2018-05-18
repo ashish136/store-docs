@@ -1,117 +1,120 @@
-html,body{
-    padding: 0px;
-    margin: 0px;
-    height: 100%;
+html,
+body {
+  padding: 0px;
+  margin: 0px;
+  height: 100%;
 }
-
+#mainNav {
+  background-color: #323754;
+  color: #fff;
+}
 #my-nav {
-    list-style-type: none;
-    margin: 0px;
-    background: #40458c;
-    height: 50px;
-    position: fixed;
-    top:0;
-    left: 0; 
-    width: 100%;
-    z-index: 1;
+  list-style-type: none;
+  margin: 0px;
+  background: #40458c;
+  height: 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
 }
-#my-nav li{
-    display: inline-block;
-    padding-top: 15px;
+#my-nav li {
+  display: inline-block;
+  padding-top: 15px;
 }
-#my-nav li a{
-    text-decoration: none;
-    color: #fff;
-    font-size: 24px;
-    margin-right: 5px;
+#my-nav li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 24px;
+  margin-right: 5px;
 }
-.right{
-    margin-left: 70%;
-    display: inline-block;
+.right {
+  margin-left: 70%;
+  display: inline-block;
 }
-.right li{
-    margin-right: 10px;
+.right li {
+  margin-right: 10px;
 }
-#home{
-    max-width: 60%;
-    margin: auto;
-    margin-top: 50px;
-    line-height: 35px;
-    font-size: 18px;
-    background-color: rgb(250, 198, 246);
-    padding: 10px 70px;
+#home {
+  max-width: 60%;
+  margin: auto;
+  margin-top: 50px;
+  line-height: 35px;
+  font-size: 18px;
+  background-color: rgb(250, 198, 246);
+  padding: 10px 70px;
 }
-#home a{
-    text-decoration: none;
-    color: rgb(2, 55, 201);
-    display: block;
-    width: 50%;
-    margin: auto;
-    text-align: center;
+#home a {
+  text-decoration: none;
+  color: rgb(2, 55, 201);
+  display: block;
+  width: 50%;
+  margin: auto;
+  text-align: center;
 }
-#container{
-    position: relative;
+#container {
+  position: relative;
 }
-#sideNav{
-    display:inline-block;
-    border-right: 1px solid #000;
-    padding: 10px;
-    background-color: #e7ecef;
-    position: absolute;
-    top: 50px;
-    left: 0;
-    width: 20%;
-    height: 660px;
-    overflow: auto;
+#sideNav {
+  display: inline-block;
+  border-right: 1px solid #000;
+  padding: 10px;
+  background-color: #e7ecef;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 20%;
+  height: 660px;
+  overflow: auto;
 }
-#sideNav ul{
-    list-style-type: none;
-    padding: 0px;
+#sideNav ul {
+  list-style-type: none;
+  padding: 0px;
 }
-#sideNav li{
-    margin-bottom: 15px;
-    border-bottom: 1px dotted black;
+#sideNav li {
+  margin-bottom: 15px;
+  border-bottom: 1px dotted black;
 }
-#sideNav a{
-    text-decoration: none;
-    font-size: 18px;
+#sideNav a {
+  text-decoration: none;
+  font-size: 18px;
 }
-.main-content{
-    position: absolute;
-    top: 50px;
-    left: 20%;
-    height: 672px;
-    overflow: auto;
-    width: 80%;
+.main-content {
+  position: absolute;
+  top: 50px;
+  left: 20%;
+  height: 672px;
+  overflow: auto;
+  width: 80%;
 }
-.main-content > h1{
-    text-align: center
+.main-content > h1 {
+  text-align: center;
 }
-.main-content > p{
-margin-top: 45px;
-    text-align: center;
-    font-size: 18px;
-    line-height: 28px;
+.main-content > p {
+  margin-top: 45px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 28px;
 }
 /*****document style starts********/
-.aadhar-doc{
-    padding: 50px;
+.aadhar-doc {
+  padding: 50px;
 }
-.aadhar-doc .form-title{
-   text-align: center;
-   font-family: sans-serif;
-   font-weight: 700;
-
+.aadhar-doc .form-title {
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: 700;
 }
-.doc-form{
-    background-color: #f1f1f1;
-    border-radius: 10px;
-    padding: 50px;
+.doc-form {
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  padding: 50px;
 }
-form .sub-btn{
-    margin-top: 50px;
-    /* width:100px; */
-    background-color: #40458c;
-    color: #fff;
+form .sub-btn {
+  margin-top: 50px;
+  /* width:100px; */
+  background-color: #40458c;
+  color: #fff;
 }
 /*****document style ends********/
