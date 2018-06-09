@@ -12,6 +12,9 @@ app.use(express.static(__dirname));
 app.use(bodyParser.json());
 
 app.use("/api", routes);
+app.use(function(err, req, res, next) {
+  res.status(411).send({ error: err.message });
+});
 //listen for requests
 app.listen(4000, function() {
   console.log("now listening for requests");

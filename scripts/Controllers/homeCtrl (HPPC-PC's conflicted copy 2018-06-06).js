@@ -41,7 +41,7 @@ myApp.controller("homeCtrl", [
             $("#loginModal").modal("hide");
             $rootScope.loginData = { login: true, user: response.data.data[0] };
             $state.go("welcomeUser", {
-              userId: $rootScope.loginData.user._id
+              userId: response.data.data[0]._id
             });
           } else {
           }

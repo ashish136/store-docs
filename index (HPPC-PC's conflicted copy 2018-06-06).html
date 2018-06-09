@@ -33,7 +33,7 @@
             </li>
         </div>
     </ul> -->
-    <nav ng-controller="mainNavCtrl" class="navbar navbar-default navbar-fixed-top" id="mainNav">
+    <nav class="navbar navbar-default navbar-fixed-top" id="mainNav">
         <div class="container">
             <div class="navbar-header">
                 <a ui-sref="home" class="navbar-brand">HOME</a>
@@ -56,7 +56,7 @@
                         <a href="" data-toggle="modal" data-target="#signUpModal">SIGN UP</a>
                     </li>
                     <li ng-show="loginData.login">
-                        <a href="" ng-click="logOut()">LOG OUT</a>
+                        <input type="button" class="btn btn-default" value="logOut">
                     </li>
                 </ul>
                 <!-- <button class="btn btn-default navbar-btn navbar-right" style="margin-left:10px">Register</button>
@@ -103,8 +103,6 @@
     <script src="./Scripts/main.js"></script>
     <script src="./Scripts/Controllers/homeCtrl.js"></script>
     <script src="./Scripts/Controllers/userCtrl.js"></script>
-    <script src="./Scripts/Controllers/mainNavCtrl.js"></script>
-
 </body>
 
 </html>

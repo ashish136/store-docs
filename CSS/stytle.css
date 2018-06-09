@@ -4,6 +4,10 @@ body {
   margin: 0px;
   height: 100%;
 }
+a {
+  cursor: pointer;
+}
+
 #mainNav {
   background-color: #323754;
   color: #fff;
@@ -88,39 +92,45 @@ body {
   overflow: auto;
   width: 80%;
 }
-.main-content > h1 {
+.main-content > .welcome-user > h1 {
   text-align: center;
 }
-.main-content > p {
+.main-content > .welcome-user > p {
   margin-top: 45px;
   text-align: center;
   font-size: 18px;
   line-height: 28px;
 }
-#footer{
+#footer {
   background-color: #000;
   color: #fff;
   margin-top: 20px;
   padding: 20px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
-#footer .logo > a{
+#footer .logo > a {
   display: block;
-  font-size:25px; 
+  font-size: 25px;
 }
-#footer .logo > a > p{
-  font-size: 16px
+#footer .logo > a > p {
+  font-size: 16px;
 }
-.our-network{
+.our-network {
   font-size: 25px;
   padding-top: 80px;
 }
-.our-network > i{
+.our-network > i {
   margin-left: 8px;
 }
-.our-network > i:first-child{
-  margin-left:20px;
+.our-network > i:first-child {
+  margin-left: 20px;
 }
 /*****document style starts********/
+.message {
+  font-size: 16px;
+}
 .aadhar-doc {
   padding: 50px;
 }

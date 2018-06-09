@@ -1,17 +1,99 @@
 <div id="container">
-<div id="sideNav">
-<h3>Select Documents</h3>
-<input type="text"/>
-<ul>
-<li><a ui-sref="welcomeUser.aadhar">Aadhar</a></li>
-<li><a ui-sref="welcomeUser.dl">Driving License</a></li>
-<li><a href="">PAN</a></li>
-</ul>
-</div>
-<div class="ui-view main-content">
-    <h1>Welcome User</h1>
-    <p>You can now start storing your documents securely with us.Just choose document and fill the form.
-        Start storing.... Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa id quae nisi aliquam beatae voluptatem reprehenderit repudiandae, temporibus harum optio nihil cumque aspernatur iste doloremque exercitationem reiciendis eos aut laudantium incidunt dolorem cupiditate amet porro. Ratione doloribus commodi repudiandae asperiores veritatis mollitia, autem eius ad vitae dolorem, ea porro magni.
-    </p>
-</div>
+    <div id="sideNav">
+        <h3>Select Documents</h3>
+        <input type="text" />
+        <ul>
+            <li>
+                <a ng-click="userDoc='aadharDoc'">Aadhar</a>
+            </li>
+            <li>
+                <a ng-click="userDoc='dlDoc'">Driving License</a>
+            </li>
+            <li>
+                <a ng-click="userDoc='panDoc'">PAN</a>
+            </li>
+        </ul>
+    </div>
+    <div class="main-content">
+        <div class="welcome-user" ng-show="userDoc=='welcomeUser'">
+            <h1>Welcome User</h1>
+            <p>You can now start storing your documents securely with us.Just choose document and fill the form. Start storing....
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa id quae nisi aliquam beatae voluptatem reprehenderit
+                repudiandae, temporibus harum optio nihil cumque aspernatur iste doloremque exercitationem reiciendis eos
+                aut laudantium incidunt dolorem cupiditate amet porro. Ratione doloribus commodi repudiandae asperiores veritatis
+                mollitia, autem eius ad vitae dolorem, ea porro magni.
+            </p>
+        </div>
+        <div class="aadhar-doc" ng-show="userDoc=='aadharDoc'">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h2 class="form-title">Enter details</h2>
+                    </div>
+                </div>
+                <form class="container-fluid doc-form">
+                    <p class="message" ng-style="msgErr?{'color':'red'}:{'color' : 'green'}">{{msg}}</p>
+
+                    <div class="row">
+                        <div class="offset-sm-2 col-sm-6 form-group">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" id="name" ng-model="aadhar.name">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="offset-sm-2 col-sm-6 form-group">
+                            <label for="id">ID</label>
+                            <input type="text" class="form-control" id="id" ng-model="aadhar.id">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="offset-sm-2 col-sm-6 form-group">
+                            <label for="dob">Date of Birth</label>
+                            <input type="date" class="form-control" id="dob" ng-model="aadhar.dob">
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="offset-sm-4 col-sm-2 form-group">
+                            <input ng-hide="aadharFound" type="button" class="form-control btn btn-default sub-btn" value="save" ng-click="saveDoc(0,1)">
+                            <input ng-show="aadharFound" type="button" class="form-control btn btn-default sub-btn" value="update" ng-click="saveDoc(1,1)">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="aadhar-doc" ng-show="userDoc=='dlDoc'">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h2 class="form-title">Enter details</h2>
+                    </div>
+                </div>
+                <form class="container-fluid doc-form">
+                    <div class="row">
+                        <div class="col-sm-6 form-group">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" id="name">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 form-group">
+                            <label for="id">ID</label>
+                            <input type="text" class="form-control" id="id">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 form-group">
+                            <label for="dob">Date of Birth</label>
+                            <input type="date" class="form-control" id="dob">
+                        </div>
+                    </div>
+                    <!-- <div class="row">
+                                    <div class="col-sm-4 form-group">
+                                            <input type="button" class="form-control" >
+                                           </div>
+                                        </div> -->
+                </form>
+            </div>
+        </div>
+    </div>
 </div>

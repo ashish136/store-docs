@@ -1,9 +1,76 @@
 <div id="home" ng-controller="homeCtrl">
-        <p>This application helps you to store your information safely.You can store information like details of aadhar card and
-            driving license and many other documents. 
-        </p>
-        <p>
-            Your information is safe and secure with us.
-        </p>
-        <a ui-sref="welcomeUser">proceed to store your info</a>
-     </div>
+    <p>This application helps you to store your information safely.You can store information like details of aadhar card and
+        driving license and many other documents.
+    </p>
+    <p>
+        Your information is safe and secure with us.
+    </p>
+    <a href="">proceed to store your info</a>
+</div>
+<!--modal code starts -->
+<div class="modal" id="loginModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button class="close" type="button" data-dismiss="modal">X</button>
+                <h2 class="modal-title">LOGIN
+                </h2>
+            </div>
+            <div class="modal-body">
+                <form>
+
+                    <div class="form-group">
+                        <label for="userNameLogin">User Name:</label>
+                        <input type="text" class="form-control" id="userNameLogin" ng-model="login.userName">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="pwdLogin">Password:</label>
+                        <input type="password" class="form-control" id="pwdLogin" ng-model="login.password">
+                    </div>
+
+                    <button type="submit" class="btn btn-default" ng-click="loginFun()">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal" id="signUpModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button class="close" type="button" data-dismiss="modal">X</button>
+                <h2 class="modal-title">Sign Up
+                </h2>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" class="form-control" id="name" ng-model="user.details.name">
+                    </div>
+                    <div class="form-group">
+                        <label for="dob">Date of Birth:</label>
+                        <input type="date" class="form-control" id="dob" ng-model="user.details.dob">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email address:</label>
+                        <input type="email" class="form-control" id="email" ng-model="user.details.email">
+                    </div>
+                    <div class="form-group">
+                        <label for="userName">User Name:</label>
+                        <input type="text" class="form-control" id="userName" ng-model="user.userName">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="pwd">Password:</label>
+                        <input type="password" class="form-control" id="pwd" ng-model="user.password">
+                    </div>
+
+                    <button type="submit" class="btn btn-default" ng-click="registerUser()">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!--modal code ends -->
